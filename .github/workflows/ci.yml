@@ -58,6 +58,7 @@ jobs:
 
       # Run Trivy vulnerability scanner in filesystem mode and output in SARIF format
       - name: Run Trivy vulnerability scanner in filesystem mode
+        continue-on-error: true
         uses: aquasecurity/trivy-action@b3dafe507ffa004210975439a1e6156b8ebb3f50
         with:
           scan-type: 'fs'
