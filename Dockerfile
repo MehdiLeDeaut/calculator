@@ -4,4 +4,6 @@ COPY . /app
 
 WORKDIR /app
 
+RUN pip install pytest
+
 CMD ["python", "calculator/calculator.py"]
